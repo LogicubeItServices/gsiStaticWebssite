@@ -38,7 +38,7 @@ export function ImageCarousel() {
           <CarouselItem key={index}>
             <div className="flex w-full relative h-[45rem] overflow-hidden  items-center justify-center">
                   <Image src={e.image} alt="e" width={3000} height={3000} className="w-full"/>
-                  <div className="absolute w-[65%] h-full flex flex-col items-end justify-center top-0 left-0 ">
+                  <div className="absolute w-[70%] h-full flex flex-col items-end justify-center top-0 left-0 ">
                     <HeroDescription title={e.title}/>
                   </div>
             </div>
