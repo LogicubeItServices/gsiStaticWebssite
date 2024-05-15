@@ -24,7 +24,7 @@ const Timings = [
 ]
 const HeroCard = () => {
   return (
-    <div className=" bg-[#1977CC] w-[20rem] p-3">
+    <div className=" bg-[#1977CC] w-[20rem] p-3 rounded-lg">
       <Card className="bg-[#1977CC] text-white border-0 shadow-[0]">
         <CardHeader>
           <CardTitle className="text-3xl font-extrabold text-center">Opening Hours</CardTitle>

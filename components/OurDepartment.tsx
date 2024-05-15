@@ -41,7 +41,8 @@ const data = [
 ];
 const OurDepartment = () => {
   return (
-    <div className="w-[60%] m-auto">
+    <div className="w-full h-fit bg-white py-28">
+    <div className="w-[60%] m-auto max-xl:w-[90%]">
       <div className="text-center mb-12">
         <h2 className="text-5xl font-bold mb-2">OUR SERVICES</h2>
         <p className="font-extralight text-[#1977CC]">
@@ -62,6 +63,7 @@ const OurDepartment = () => {
             ))
         }
       </div>
+    </div>
     </div>
   );
 };

@@ -16,7 +16,7 @@ import HeroDescription from "./HeroDescription";
 
 export function ImageCarousel() {
   const plugin = React.useRef(
-    Autoplay({ delay: 2000, stopOnInteraction: true })
+    Autoplay({ delay: 2000, stopOnInteraction: false })
   )
   const SrcArr = [
     {
@@ -36,9 +36,9 @@ export function ImageCarousel() {
       <CarouselContent>
         {SrcArr.map((e, index) => (
           <CarouselItem key={index}>
-            <div className="flex w-full relative h-[45rem] overflow-hidden  items-center justify-center">
+            <div className="flex w-full relative h-[45rem] overflow-hidden ">
                   <Image src={e.image} alt="e" width={3000} height={3000} className="w-full"/>
-                  <div className="absolute w-[70%] h-full flex flex-col items-end justify-center top-0 left-0 ">
+                  <div className="absolute w-[70%] h-full flex flex-col bottom-0 left-0 ">
                     <HeroDescription title={e.title}/>
                   </div>
             </div>
