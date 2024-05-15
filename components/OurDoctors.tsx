@@ -152,7 +152,7 @@ const OurDoctors = () => {
                   <h2 className="text-2xl ">Timings:</h2>
                   <div>
                     {e.Timings.map((ef, i)=>(
-                      <div className="w-full flex justify-between"><p>{ef.day}</p> <p>{ef.Time}</p></div>
+                      <div key={i} className="w-full flex justify-between"><p>{ef.day}</p> <p>{ef.Time}</p></div>
                     ))}
                   </div>
                 </div>
