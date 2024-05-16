@@ -41,7 +41,7 @@ const data = [
 ];
 const Gallery = () => {
   return (
-    <div className="py-20 bg-white w-full">
+    <div id='Gallery' className="py-20 bg-white w-full">
         <div className="w-[60%] m-auto flex flex-col items-center max-xl:w-[90%]">
             <div className="text-center mb-12">
                 <h2 className="text-5xl font-bold mb-2">OUR GALLERY</h2>
@@ -60,7 +60,7 @@ const Gallery = () => {
             <TabsTrigger value="Surgery" className="rounded-3xl px-4 py-2 text-xl !bg-[#1977CC] !text-white">Surgery</TabsTrigger>
           </TabsList>
           <TabsContent value="All">
-            <div className="grid grid-rows-2 grid-flow-col gap-4  w-full h-full">
+            <div className="grid grid-rows-2 grid-flow-col gap-4  w-full h-full max-md:grid-cols-1 max-md:grid-flow-row">
                     <Image src={Image1} alt="Image" width={500} height={500} className=" w-full "/>
                     <Image src={Image7} alt="Img" width={500} height={500} className=" w-full "/>
                     <Image src={Image2} alt="Img" width={500} height={500} className=" w-full row-span-2"/>
@@ -71,13 +71,13 @@ const Gallery = () => {
             </div>
           </TabsContent>
             <TabsContent value="Pediatrics">
-                <div className="grid grid-cols-4 gap-4">
+                <div className="grid grid-cols-4 gap-4 max-md:grid-cols-1">
                 <Image src={Image5} alt="Img" width={500} height={500} className=" w-full  "/>
                     <Image src={Image4} alt="Img" width={500} height={500} className=" w-full "/>
                 </div>
             </TabsContent>
             <TabsContent value="Surgery">
-                <div className="grid grid-cols-4 gap-4">
+                <div className="grid grid-cols-4 gap-4 max-md:grid-cols-1">
                 <Image src={Image7} alt="Img" width={500} height={500} className=" w-full "/>
                     <Image src={Image2} alt="Img" width={500} height={500} className=" w-full"/>
                 </div>

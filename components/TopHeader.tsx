@@ -15,7 +15,7 @@ const TopHeader = () => {
             <Twitter/>
             <Youtube/>
         </div>
-        <div className='flex gap-2 items-center'>
+        <div className='flex gap-4 items-center'>
             <Location/> Civil Hospital Campus,
 Asarwa, Ahmedabad-380 016.
             <Phone/> 079-22684258 / 22684211

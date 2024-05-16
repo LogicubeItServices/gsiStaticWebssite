@@ -29,7 +29,7 @@ const data = [
 ]
 const OurTeam = () => {
   return (
-    <div className='w-full bg-[#f7f7f7] bg-opacity-85 py-20'>
+    <div id='OurTeam' className='w-full bg-[#f7f7f7] bg-opacity-85 py-20'>
         <div className="w-[60%] m-auto flex flex-col items-center max-xl:w-[90%]">
             <div className="text-center mb-12">
                 <h2 className="text-5xl font-bold mb-2">OUR TEAM</h2>

@@ -116,7 +116,7 @@ const OurDoctors = () => {
     Autoplay({ delay: 1000, stopOnInteraction: false })
   );
   return (
-    <div className="w-full bg-white bg-opacity-80 py-28 h-full">
+    <div id="OurDoctors" className="w-full bg-white bg-opacity-80 py-28 h-full">
       <div className="w-[60%] m-auto max-xl:w-[90%]">
         <div className="text-center mb-12">
           <h2 className="text-5xl font-bold mb-2">OUR DOCTORS</h2>
