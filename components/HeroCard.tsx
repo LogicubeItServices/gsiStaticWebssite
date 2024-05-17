@@ -1,3 +1,4 @@
+'use client'
 import React from "react";
 import {
   Card,
@@ -7,6 +8,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import {motion} from 'framer-motion'
 
 const Timings = [
     {
@@ -24,6 +26,7 @@ const Timings = [
 ]
 const HeroCard = () => {
   return (
+    <motion.div initial={{rotateY:180,opacity:0}} whileInView={{rotateY:0,opacity:1}} transition={{ease:"linear" , duration:0.4}} whileHover={{scale:1.1}}>
     <div className=" bg-[#1977CC] w-[20rem] p-3 rounded-lg">
       <Card className="bg-[#1977CC] text-white border-0 shadow-[0]">
         <CardHeader>
@@ -44,6 +47,7 @@ const HeroCard = () => {
         </CardFooter> */}
       </Card>
     </div>
+    </motion.div>
   );
 };
 

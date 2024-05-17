@@ -14,6 +14,7 @@ import {
 import Image from "next/image";
 import HeroDescription from "./HeroDescription";
 
+
 export function ImageCarousel() {
   const plugin = React.useRef(
     Autoplay({ delay: 2000, stopOnInteraction: false })
